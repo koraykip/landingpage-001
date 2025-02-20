@@ -17,7 +17,7 @@ body {
     width: var(--inner-width);
     margin: 0 auto;
 }
-hr { margin:0; padding:0; border: 1px solid transparent; }
+hr { margin:0; padding:0; border: none; }
 
 
 
