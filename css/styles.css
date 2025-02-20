@@ -1,8 +1,9 @@
 :root{
     box-sizing: border-box;
-    --inner-width: 80%;
+    --inner-width: max(40%, 900px);
     --bg-hero: #1f2937;
 }
+* { outline: red 1px solid;}
 
 body {
     margin: 0;
@@ -13,18 +14,95 @@ body {
 .inner-width {
     width: var(--inner-width);
     margin: 0 auto;
-    padding: 1rem;
 }
 hr { margin:0; padding:0; border: 1px solid transparent; }
-header { background-color: var(--bg-hero); color: white; }
-header .inner-width {
+body>header { background-color: var(--bg-hero); color: white; }
+body>header .inner-width {
     display: flex;
     justify-content: space-between;
     align-items: center;    
 }
-header ul { margin:0; padding:0; display: flex; gap: 2rem;}
-header li { list-style-type: none;}
-header a { color: white; text-decoration: none; padding: 0.5rem; border: 1px solid transparent; border-radius: 5px; }
-header a:hover { border: 1px solid white; border-radius: 5px; }
+.logo { color: #f9faf8; font-size: 24px; }
+body>header ul { margin:0; padding:0; display: flex; gap: 2rem;}
+body>header li { list-style-type: none;}
+body>header a { color: white; text-decoration: none; padding: 0.5rem; border: 1px solid transparent; border-radius: 5px; }
+body>header a:hover { border: 1px solid white; border-radius: 5px; }
+
+.section-hero {
+    background-color: var(--bg-hero); 
+    color: white;    
+    height: 18rem;
+    padding: 4rem 0;
+
+}
+.section-hero .inner-width{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.section-hero .hero {
+    gap: 0.5rem; width: 50%
+}
+.section-hero h1{ color: #f9faf8; font-size: 48px; font-weight: 900; margin: 0.5rem 0;}
+.section-hero p { color: #e5e7eb; font-size: 18px; margin: 0.5rem 0;}
+.sign-up-button { 
+    background-color: #3882f6;
+    color: white; font-weight: bold;
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+}
+.section-hero figure {  margin: 0; font-size: 12px; }
+.section-hero img { display:block; margin-left: auto;}
+.section-hero a { color: white; text-decoration: none; }
+
+.section-random-info {
+    background-color: white;
+    height: 30rem;
+}
+h2 { padding: 1rem; font-size: 36px;}
+.section-random-info .inner-width {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+.info-container{
+    width: 90%;
+    display: flex;
+    gap: 2.5rem;    
+}
+.info-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.illustration { 
+    width: 10rem; height: 10rem; 
+    border: #3882f6 2px solid;
+    border-radius: 0.75rem;
+}
+.info-item p { text-align: center;}
+
+.section-quote {
+    background-color: #e5e7eb;
+    height: 25rem;
+}
+.section-quote .inner-width {
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.section-quote cite{ 
+    font-size: 36px; 
+    font-style: italic; 
+    font-weight: 100;
+    color: #1f2937;
+    padding: 0 2.5rem;
+}
+.quote-author { 
+    display:block; 
+    align-self: flex-end;    
+    font-weight: bold;
+}
 
 
