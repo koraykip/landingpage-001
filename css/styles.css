@@ -10,14 +10,17 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: white;
 }
-header { background-color: var(--bg-hero); color: white; }
-header .inner-width {
+.inner-width {
     width: var(--inner-width);
     margin: 0 auto;
+    padding: 1rem;
+}
+hr { margin:0; padding:0; border: 1px solid transparent; }
+header { background-color: var(--bg-hero); color: white; }
+header .inner-width {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
+    align-items: center;    
 }
 header ul { margin:0; padding:0; display: flex; gap: 2rem;}
 header li { list-style-type: none;}
